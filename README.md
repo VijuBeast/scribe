@@ -1,6 +1,9 @@
 # Scribe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+This project was created by [Samarth Agarwal](https://github.com/samarthagarwal)
+I've made some changes in the project, If you want to refer original project you can checkout his github.
+You can checkout my project [scribe](https://scribe-9a9f6.web.app/home)
 
 ## Development server
 
