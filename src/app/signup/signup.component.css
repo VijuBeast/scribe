@@ -1,0 +1,31 @@
+.background {
+  background-color: #eb1736;
+}
+.background-left {
+  background-color: #eb1736;
+  background-image: url("/assets/person.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
+
+.background-right {
+  background-color: #eb1736;
+}
+
+.card {
+  background-color: transparent;
+  color: #fff;
+}
+
+.text-muted {
+  color: #fff !important;
+}
+
+.btn[type="submit"] {
+  border-radius: 50px;
+}
+
+h1 {
+  color: #fff;
+}

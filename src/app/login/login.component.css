@@ -1,0 +1,295 @@
+/* Animated login using your email property */
+h5 {
+  animation: heartBeat;
+  animation-duration: 3s;
+}
+@keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* Some styling */
+.background {
+  background-color: #eb1736;
+  height: 100%;
+}
+.card {
+  background-color: transparent !important;
+  color: #fff;
+  border: none;
+}
+.btn[type="submit"] {
+  border-radius: 50px;
+}
+.btn-link {
+  color: #fff;
+}
+h1 {
+  color: #fff;
+}
+.div-sub-button {
+  margin-top: 70px;
+}
+.create-button {
+  margin-top: 30px;
+}
+/* Party Animation */
+.confetti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.confetti-piece {
+  position: absolute;
+  width: 8px;
+  height: 16px;
+  background: #ffd300;
+  top: 0;
+  opacity: 0;
+}
+.confetti-piece:nth-child(1) {
+  left: 7%;
+  transform: rotate(3deg);
+  animation: makeItRain 1000ms infinite ease-out;
+  animation-delay: 270ms;
+  animation-duration: 815ms;
+}
+.confetti-piece:nth-child(2) {
+  left: 14%;
+  transform: rotate(-10deg);
+  animation: makeItRain 1000ms infinite ease-out;
+  animation-delay: 400ms;
+  animation-duration: 842ms;
+}
+
+.confetti-piece:nth-child(3) {
+  left: 21%;
+  transform: rotate(-36deg);
+  animation: makeItRain 1000ms infinite ease-out;
+  animation-delay: 213ms;
+  animation-duration: 890ms;
+}
+.confetti-piece:nth-child(4) {
+  left: 28%;
+  transform: rotate(-33deg);
+  animation: makeItRain 1000ms infinite ease-out;
+  animation-delay: 187ms;
+  animation-duration: 789ms;
+}
+.confetti-piece:nth-child(5) {
+  left: 35%;
+  transform: rotate(-76deg);
+  animation: makeItRain 1000ms infinite ease-out;
+  animation-delay: 356ms;
+  animation-duration: 1077ms;
+}
+.confetti-piece:nth-child(6) {
+  left: 42%;
+  transform: rotate(66deg);
+  animation: makeItRain 1000ms infinite ease-out;
+  animation-delay: 68ms;
+  animation-duration: 850ms;
+}
+.confetti-piece:nth-child(7) {
+  left: 49%;
+  transform: rotate(30deg);
+  animation: makeItRain 1000ms infinite ease-out;
+  animation-delay: 154ms;
+  animation-duration: 1129ms;
+}
+.confetti-piece:nth-child(8) {
+  left: 56%;
+  transform: rotate(-29deg);
+  animation: makeItRain 1000ms infinite ease-out;
+  animation-delay: 267ms;
+  animation-duration: 892ms;
+}
+.confetti-piece:nth-child(9) {
+  left: 63%;
+  transform: rotate(-62deg);
+  animation: makeItRain 1000ms infinite ease-out;
+  animation-delay: 382ms;
+  animation-duration: 932ms;
+}
+.confetti-piece:nth-child(10) {
+  left: 70%;
+  transform: rotate(78deg);
+  animation: makeItRain 1000ms infinite ease-out;
+  animation-delay: 65ms;
+  animation-duration: 1097ms;
+}
+.confetti-piece:nth-child(11) {
+  left: 77%;
+  transform: rotate(56deg);
+  animation: makeItRain 1000ms infinite ease-out;
+  animation-delay: 340ms;
+  animation-duration: 784ms;
+}
+.confetti-piece:nth-child(12) {
+  left: 84%;
+  transform: rotate(-1deg);
+  animation: makeItRain 1000ms infinite ease-out;
+  animation-delay: 307ms;
+  animation-duration: 837ms;
+}
+.confetti-piece:nth-child(13) {
+  left: 91%;
+  transform: rotate(-37deg);
+  animation: makeItRain 1000ms infinite ease-out;
+  animation-delay: 73ms;
+  animation-duration: 987ms;
+}
+.confetti-piece:nth-child(odd) {
+  background: #17d3ff;
+}
+.confetti-piece:nth-child(even) {
+  z-index: 1;
+}
+.confetti-piece:nth-child(4n) {
+  width: 5px;
+  height: 12px;
+  animation-duration: 2000ms;
+}
+.confetti-piece:nth-child(3n) {
+  width: 3px;
+  height: 10px;
+  animation-duration: 2500ms;
+  animation-delay: 1000ms;
+}
+.confetti-piece:nth-child(4n-7) {
+  background: #ff4e91;
+}
+@keyframes makeItRain {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(200px);
+  }
+}
+
+/* Button Animation on "Don't have an account create one" */
+.main-content {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.main-content .item {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  flex-wrap: wrap;
+  background: var(--bg-color);
+}
+/* .main-content .item:not(.footer) {
+  padding-top: 1rem;
+} */
+.animated-button {
+  background: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  padding: 0.8rem 2rem;
+  font: 24px "Margarine", sans-serif;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  letter-spacing: 2px;
+}
+.button-parrot .parrot {
+  position: absolute;
+  width: 60px;
+  text-align: center;
+  animation: blink 0.8s infinite;
+  color: transparent;
+}
+.button-parrot .parrot:before {
+  content: "Click Me!";
+}
+.button-parrot .parrot:nth-child(1) {
+  top: -30px;
+  left: -40px;
+  font: 12px/1 "Margarine", sans-serif;
+  transform: rotate(-20deg);
+  animation-duration: 0.5s;
+}
+.button-parrot .parrot:nth-child(2) {
+  font: 12px/1 "Margarine", sans-serif;
+  right: -40px;
+  top: -20px;
+  transform: rotate(15deg);
+  animation-duration: 0.3s;
+}
+.button-parrot .parrot:nth-child(3) {
+  font: 16px/1 "Margarine", sans-serif;
+  top: -60px;
+  left: 15px;
+  transform: rotate(10deg);
+  animation-duration: 1s;
+}
+.button-parrot .parrot:nth-child(4) {
+  font: 18px/1 "Margarine", sans-serif;
+  top: -70px;
+  left: 95px;
+  transform: rotate(2deg);
+  animation-duration: 0.7s;
+}
+.button-parrot .parrot:nth-child(5) {
+  font: 14px/1 "Margarine", sans-serif;
+  top: 80px;
+  left: 105px;
+  transform: rotate(-20deg);
+  animation-duration: 0.8s;
+}
+.button-parrot .parrot:nth-child(6) {
+  font: 12px/1 "Margarine", sans-serif;
+  top: 80px;
+  left: 5px;
+  transform: rotate(10deg);
+  animation-duration: 1.2s;
+}
+.button-parrot button:hover .parrot:before {
+  content: "Do it!";
+  width: 70px;
+}
+@keyframes blink {
+  25%,
+  75% {
+    color: transparent;
+  }
+  40%,
+  60% {
+    color: #fff;
+  }
+}
